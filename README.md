@@ -1,17 +1,17 @@
 # loadBalancer
 Short example to explain in a simple way how we can build a load balancer using nginx and docker.  
-We are using the Round-robin method who is used by default
+for this part We are using the Least connection method for load balance
 
 
 ## Requirements
   - docker version 19.03.13
   - node version v14.15.0
   
-
+## Steps
 Build the docker images
   
-  `docker build -t server-app:1.0.0 .`  
-  `cd gateway && docker build -t gateway:1.0.0 .`
+ - `docker build -t server-app:1.0.0 .`  
+ - `cd gateway && docker build -t gateway:1.0.0 .`
   
 Run the numbers of containers/servers wich do you want(for this example we will use four container/servers  
   - `docker run -d -p 4001:4000 --name server-01 -e "server=one" server-app:1.0.0`  
