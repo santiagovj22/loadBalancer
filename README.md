@@ -10,7 +10,7 @@ We are using the Round-robin method who is used by default
 
 Build the docker images
   
-  `docker build -t server-app:1.0.0 .`
+  `docker build -t server-app:1.0.0 .`  
   `cd gateway && docker build -t gateway:1.0.0 .`
   
 Run the numbers of containers/servers wich do you want(for this example we will use four container/servers  
