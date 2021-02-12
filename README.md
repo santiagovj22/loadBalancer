@@ -1,6 +1,6 @@
 # loadBalancer
-Short example to explain in a simple way how we can build a load balancer using nginx and docker.  
-for this part We are using the Least connection method for load balance
+Short example to explain in a simple way how works a load balancer using nginx and docker.  
+for this part We are using the "Least connection" method for load balance
 
 
 ## Requirements
